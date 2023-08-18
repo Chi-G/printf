@@ -33,7 +33,7 @@ Group Project: Collaborating with Chinemere Chukwudalu
  You don’t have to handle precision
  You don’t have to handle the length modifiers
 
-7. Write a function that Handle the following flag characters for non-custom conversion specifiers: +, #
+7. Write a function that Handle the following flag characters for non-custom conversion specifiers: +, space,  #
 
 8. Write a function that Handle the following length modifiers for non-custom conversion specifiers: l, h 
 

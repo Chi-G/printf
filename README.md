@@ -33,14 +33,10 @@ Group Project: Collaborating with Chinemere Chukwudalu
  You don’t have to handle precision
  You don’t have to handle the length modifiers
 
-7. Write a function that Handle the following flag characters for non-custom conversion specifiers:
- +
- space
- #
+7. Write a function that Handle the following flag characters for non-custom conversion specifiers: +, #
 
-8. Write a function that Handle the following length modifiers for non-custom conversion specifiers:
- l
- h
+8. Write a function that Handle the following length modifiers for non-custom conversion specifiers: l, h 
+
  Conversion specifiers to handle: d, i, u, o, x, X
 
 9. Write a function that Handle the field width for non-custom conversion specifiers.

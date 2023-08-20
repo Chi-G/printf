@@ -81,7 +81,7 @@ int print_pointer(va_list types, char buffer[],
 /* Funciotns to handle other specifiers */
 int loc_flags(const char *format, int *i);
 int loc_width(const char *format, int *i, va_list list);
-int loc_precision(const char *format, int *i, va_list list);
+int loc_concision(const char *format, int *i, va_list list);
 int loc_size(const char *format, int *i);
 
 /*Function to print string in reverse*/

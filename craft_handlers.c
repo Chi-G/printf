@@ -42,7 +42,6 @@ int handle_write_char(char c, char buffer[],
 			return (write(1, &buffer[BUFF_SIZE - i - 1], width - 1) +
 					write(1, &buffer[0], 1));
 	}
-
 	return (write(1, &buffer[0], 1));
 }
 

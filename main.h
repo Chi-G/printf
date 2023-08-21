@@ -24,7 +24,6 @@
  * @fmt: The format.
  * @fn: The function associated.
  */
-
 struct fmt
 {
 char fmt;
@@ -38,7 +37,6 @@ int (*fn)(va_list, char[], int, int, int, int);
  * @fmt: The format.
  * @fm_t: The function associated.
  */
-
 typedef struct fmt fmt_t;
 
 int _printf(const char *format, ...);
@@ -81,22 +79,10 @@ int print_pointer(va_list types, char buffer[],
 int flags, int width, int precision, int size);
 
 /* Funciotns to handle other specifiers */
-int loc_flags(const char *format, int *i);
-int loc_width(const char *format, int *i, va_list list);
-int loc_concision(const char *format, int *i, va_list list);
-int loc_size(const char *format, int *i);
-
-/*added function declarations*/
-/* Functions to handle other specifiers */
-int loc_flags(const char *format, int *i);
-int loc_width(const char *format, int *i, va_list list);
-int loc_concision(const char *format, int *i, va_list list);
-int loc_size(const char *format, int *i);
-
-/* Main print function */
-int use_print(const char *fmt, int *i,
-va_list list, char buffer[], int flags, int width, int concision, int size);
-    /*end of added function declarations*/
+int get_flags(const char *format, int *i);
+int get_width(const char *format, int *i, va_list list);
+int get_precision(const char *format, int *i, va_list list);
+int get_size(const char *format, int *i);
 
 /*Function to print string in reverse*/
 int print_reverse(va_list types, char buffer[],

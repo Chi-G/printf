@@ -82,6 +82,17 @@ int loc_width(const char *format, int *i, va_list list);
 int loc_concision(const char *format, int *i, va_list list);
 int loc_size(const char *format, int *i);
 
+/* begin of added  Functions to handle other specifiers */
+int loc_flags(const char *format, int *i);
+int loc_width(const char *format, int *i, va_list list);
+int loc_concision(const char *format, int *i, va_list list);
+int loc_size(const char *format, int *i);
+
+/* Main print function */
+int use_print(const char *fmt, int *i,
+    va_list list, char buffer[], int flags, int width, int concision, int size);
+/*end of added function declaration */
+
 /*Function to print string in reverse*/
 int print_reverse(va_list types, char buffer[],
         int flags, int width, int concision, int size);
